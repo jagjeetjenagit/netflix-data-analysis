@@ -22,6 +22,21 @@ st.markdown("---")
 @st.cache_data
 def load_data():
     """Load and clean the Netflix data"""
+    import os
+    
+    # Check if file exists locally, if not download it
+    if not os.path.exists('netflix_titles.csv'):
+        try:
+            import kagglehub
+            # Download the dataset from Kaggle
+            path = kagglehub.dataset_download("shivamb/netflix-shows")
+            # Copy to current directory
+            import shutil
+            shutil.copy(os.path.join(path, 'netflix_titles.csv'), 'netflix_titles.csv')
+        except:
+            st.error("Unable to download dataset. Please check your internet connection.")
+            st.stop()
+    
     # Read the CSV file
     df = pd.read_csv('netflix_titles.csv')
     
