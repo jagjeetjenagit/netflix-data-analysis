@@ -29,14 +29,26 @@ This project explores Netflix's movies and TV shows to understand:
 ## 📁 Files
 
 - `netflix_analysis.ipynb` - Main Jupyter notebook with complete analysis
+- `app.py` - **Streamlit dashboard** for interactive visualization
+- `requirements.txt` - Python dependencies
 - `README.md` - This file
+- `DASHBOARD_README.md` - Dashboard-specific documentation
 
 ## 🚀 How to Run
 
+### Option 1: Jupyter Notebook Analysis
 1. Clone this repository
 2. Install required packages: `pip install pandas matplotlib seaborn kagglehub`
 3. Open `netflix_analysis.ipynb` in Jupyter Notebook or VS Code
 4. Run all cells to see the analysis
+
+### Option 2: Interactive Streamlit Dashboard
+1. Clone this repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the dashboard: `streamlit run app.py`
+4. Open your browser at `http://localhost:8501`
+
+**Note:** The Netflix dataset will be automatically downloaded when you run either the notebook or dashboard.
 
 ## 📈 Key Visualizations
 
@@ -54,6 +66,8 @@ This project helped me practice:
 - Creating meaningful visualizations
 - Drawing insights from real-world data
 - Storytelling with data
+- **Building interactive dashboards with Streamlit**
+- **Creating web applications for data visualization**
 
 ## 💡 Next Steps
 
