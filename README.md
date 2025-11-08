@@ -1,5 +1,7 @@
 # Netflix Data Analysis Project
 
+🎬 **[View Live Dashboard](https://netflix-data-analysis-et9mr3qiqnaacnqj8pfcc6.streamlit.app/)** 🎬
+
 A beginner-friendly exploratory data analysis of Netflix's content catalog using Python, pandas, and matplotlib.
 
 ## 🎯 Project Overview
